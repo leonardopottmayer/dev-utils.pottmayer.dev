@@ -1,7 +1,7 @@
 import { Avatar, Typography, Dropdown, Layout, MenuProps, Space } from "antd";
 import styles from "./HeaderMenu.module.css";
 import system_logo from "@/assets/react.svg";
-import { UserOutlined, LogoutOutlined } from "@ant-design/icons";
+import { UserOutlined } from "@ant-design/icons";
 import { Link } from "react-router-dom";
 
 const { Header } = Layout;
@@ -12,16 +12,7 @@ const HeaderMenu = () => {
     {
       key: "1",
       icon: <UserOutlined />,
-      label: <Link to="/profile">{new Date().toLocaleDateString()}</Link>,
-    },
-    {
-      key: "999",
-      danger: true,
-      icon: <LogoutOutlined />,
-      label: "Logout",
-      onClick: () => {
-        console.log("Logging out");
-      },
+      label: <Link to="/">{new Date().toLocaleDateString()}</Link>,
     },
   ];
 

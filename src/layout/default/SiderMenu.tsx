@@ -27,9 +27,7 @@ const SiderMenu = () => {
         {
           key: "sider-menu-subitem-password-generator",
           label: (
-            <Link to="/passwords/password-generator">
-              PSW001 - Password generator
-            </Link>
+            <Link to="/passwords/PSW001">PSW001 - Password generator</Link>
           ),
           icon: <KeyOutlined />,
         },
